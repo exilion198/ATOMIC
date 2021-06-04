@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ATOMIC GAMES</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+   <link href="../css/carousel.css" rel="stylesheet">
+   <link href="../css/estilosform.css" rel="stylesheet">
+   <link href="../css/misestilos.css" rel="stylesheet"
+</head>
+<body>
+<main>
+   <div id="agrupar">
+      <header id="cabecera"> 
+         <img id="logoimg" src="../img/logo.jpg">
+         <h1 id="logo">ATOMIC GAMES<br>CONTACTO</h1>
+      </header>
+      <nav id="menu">
+          <ul>
+              <li><a href="../index.html">Principal</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
+      <section id="seccion">
+   <form action="../php/enviar_local.php" method="post">
+     <h2>Contacto</h2>
+     <input type="text" required="" name="nombre" id="Nombre" placeholder="Nombre">
+     <br>
+     <input type="email" name="correo" id="Correo" placeholder="Correo">
+     <br>
+     <input pattern="[0-9]{10}" name="telefono" id="Telefono" placeholder="Telefono" title="Inserte los 5 números de su numero telefonico">
+     <br>
+     <textarea name="mensaje" placeholder="Escriba aqui su   mensaje."></textarea>
+     <br>
+     <input type="submit" value="ENVIAR" id="boton">
+  </form>
+      </section> 
+      <footer id="pie">
+          Derechos reservados <br> ATOMIC GAMES <br>&COPY; 2020-2021
+          </footer>
+   </div>
+</body>
+</html>
